@@ -15,8 +15,8 @@ jobs:
         run: echo "$(tail -n 150 log.txt)" > log.txt
       - name: Update log
         run: |
-          git config --local user.email "me@dw1.io"
-          git config --local user.name "Dwi Siswanto"
+          git config --local user.email "corpsxero@gmail.com"
+          git config --local user.name "xerocorps"
           git commit -am "refresh log :robot:"
           git push origin ${{ github.ref }}
         continue-on-error: true
