@@ -26,8 +26,8 @@ jobs:
         run: bun post
       - name: Update log
         run: |
-          git config --local user.email "git@dw1.io"
-          git config --local user.name "Dwi Siswanto"
+          git config --local user.email "corpsxero@gmail.com"
+          git config --local user.name "xerocorps"
           git commit -am "auto-update log :robot:"
           git push origin ${{ github.ref }}
         continue-on-error: true
